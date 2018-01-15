@@ -1,0 +1,1 @@
+module.exports = toDecimalMark = num => num.toLocaleString('en-US');

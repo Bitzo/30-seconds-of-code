@@ -1,0 +1,1 @@
+module.exports = similarity = (arr, values) => arr.filter(v => values.includes(v));

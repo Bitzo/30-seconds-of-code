@@ -1,0 +1,1 @@
+module.exports = isNull = val => val === null;

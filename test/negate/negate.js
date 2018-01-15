@@ -1,0 +1,1 @@
+module.exports = negate = func => (...args) => !func(...args);

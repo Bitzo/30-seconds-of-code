@@ -1,0 +1,1 @@
+module.exports = splitLines = str => str.split(/\r?\n/);

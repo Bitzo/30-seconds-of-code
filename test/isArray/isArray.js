@@ -1,0 +1,1 @@
+module.exports = isArray = val => Array.isArray(val);

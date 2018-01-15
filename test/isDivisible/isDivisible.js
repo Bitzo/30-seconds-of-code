@@ -1,0 +1,1 @@
+module.exports = isDivisible = (dividend, divisor) => dividend % divisor === 0;

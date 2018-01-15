@@ -1,0 +1,1 @@
+module.exports = digitize = n => [...`${n}`].map(i => parseInt(i));

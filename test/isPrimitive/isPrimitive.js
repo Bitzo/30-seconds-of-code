@@ -1,0 +1,1 @@
+module.exports = isPrimitive = val => !['object', 'function'].includes(typeof val) || val === null;

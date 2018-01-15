@@ -1,0 +1,1 @@
+module.exports = initializeArrayWithValues = (n, val = 0) => Array(n).fill(val);

@@ -1,0 +1,1 @@
+module.exports = show = (...el) => [...el].forEach(e => (e.style.display = ''));

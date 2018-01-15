@@ -1,0 +1,1 @@
+module.exports = isBoolean = val => typeof val === 'boolean';

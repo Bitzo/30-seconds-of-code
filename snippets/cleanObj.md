@@ -2,8 +2,8 @@
 
 Removes any properties except the ones specified from a JSON object.
 
-Use `Object.keys()` method to loop over given json object and deleting keys that are not `include`d in given array.
-Also if you give it a special key (`childIndicator`) it will search deeply inside it to apply function to inner objects too.
+Use `Object.keys()` method to loop over given JSON object and deleting keys that are not included in given array.
+If you pass a special key,`childIndicator`, it will search deeply apply the function to inner objects, too.
 
 ```js
 const cleanObj = (obj, keysToKeep = [], childIndicator) => {
@@ -13,11 +13,12 @@ const cleanObj = (obj, keysToKeep = [], childIndicator) => {
     } else if (!keysToKeep.includes(key)) {
       delete obj[key];
     }
-  })
-}
-/*
-  const testObj = {a: 1, b: 2, children: {a: 1, b: 2}}
-  cleanObj(testObj, ["a"],"children")
-  console.log(testObj)// { a: 1, children : { a: 1}}
-*/
+  });
+  return obj;
+};
+```
+
+```js
+const testObj = { a: 1, b: 2, children: { a: 1, b: 2 } };
+cleanObj(testObj, ['a'], 'children'); // { a: 1, children : { a: 1}}
 ```

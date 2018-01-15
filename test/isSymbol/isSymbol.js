@@ -1,0 +1,1 @@
+module.exports = isSymbol = val => typeof val === 'symbol';

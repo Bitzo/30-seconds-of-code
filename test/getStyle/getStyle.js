@@ -1,0 +1,1 @@
+module.exports = getStyle = (el, ruleName) => getComputedStyle(el)[ruleName];

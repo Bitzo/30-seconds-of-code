@@ -1,0 +1,1 @@
+module.exports = shallowClone = obj => Object.assign({}, obj);

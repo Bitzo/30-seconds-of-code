@@ -1,0 +1,1 @@
+module.exports = longestItem = (...vals) => [...vals].sort((a, b) => b.length - a.length)[0];

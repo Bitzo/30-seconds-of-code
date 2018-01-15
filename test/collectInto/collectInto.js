@@ -1,0 +1,1 @@
+module.exports = collectInto = fn => (...args) => fn(args);
